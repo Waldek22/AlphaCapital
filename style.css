@@ -1,0 +1,10 @@
+* {
+	text-align: center;
+}
+li {
+	font-size: 22px;
+	list-style: none;
+}
+.container {
+	margin-top: 15%;
+}
