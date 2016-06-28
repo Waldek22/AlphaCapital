@@ -11,11 +11,11 @@
 }
 
 .lang {
-
+	margin: 15px 10px;
 }
 
 .navi {
-	margin-top: 30px;
+	
 }
 
 .navi-link {
@@ -23,9 +23,18 @@
 }
 
 .box {
-	margin-top: 80px;
+	margin-top: 100px;
 }
 
 .icon {
-	font-size: 8em;
+	font-size: 3em;
+}
+
+h2 {
+	margin: 40px 0;
+	font-size: 1.8em;
+}
+
+.forms {
+	margin: 100px 0 ;
 }
