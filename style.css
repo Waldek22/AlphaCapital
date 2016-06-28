@@ -1,10 +1,31 @@
 * {
-	text-align: center;
+	box-sizing:border-box;
 }
-li {
-	font-size: 22px;
-	list-style: none;
+
+.logo {
+	height: 50px;
 }
-.container {
-	margin-top: 15%;
+
+.nav-logo {
+	padding: 0 15px;
+}
+
+.lang {
+
+}
+
+.navi {
+	margin-top: 30px;
+}
+
+.navi-link {
+	text-transform: uppercase;
+}
+
+.box {
+	margin-top: 80px;
+}
+
+.icon {
+	font-size: 8em;
 }
