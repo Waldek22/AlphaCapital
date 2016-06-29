@@ -52,10 +52,28 @@ h3{
 .conect-cont {
 	background-color: rgba(0,0,0,0.7);
 	padding: 20px;
-	margin: 50px 0 0 ;
+	margin: 50px 0 0 0 ;
 
 }
 
 .client{
 	margin: 30px 0;
+}
+
+footer {
+	height: 50px;
+	background-color: #333;
+	color: #fff;
+}
+
+footer li a {
+	color: #fff;
+} 
+
+.foot-form {
+	padding-top: 10px;
+}
+
+.foot-cont {
+	padding-top: 15px;
 }
