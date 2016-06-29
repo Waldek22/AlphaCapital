@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+
 * {
-	box-sizing:border-box;
+	box-sizing: border-box;
 }
 
 .logo {
@@ -11,15 +13,20 @@
 }
 
 .lang {
-	margin: 15px 10px;
+	/*margin: 15px 10px;*/
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 15px;
+	
 }
 
 .navi {
+	background-color: #fff;
+	padding-top: 15px;
 	
 }
 
 .navi-link {
-	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .box {
