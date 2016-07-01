@@ -128,23 +128,44 @@ h2 {
 /*clients-end*/
 
 .forms {
-	margin: 100px 0 ;
+	background-color: #2e3639;
+	overflow: hidden;
+	padding: 60px 0;
+	color: #ccc;
 }
-
-.connect {
-	background-image: url("img/phone.jpg");
-	height: 275px;
-	font-size: 2em;
+.formname {
+	padding-top: 43px;
+}
+.conect-cont h3{
+	font-size:3.4rem;
 	color: #fff;
-}
-h3{
+	font-weight:700;
 }	
-
 .conect-cont {
-	background-color: rgba(0,0,0,0.7);
 	padding: 20px;
-	margin: 50px 0 0 0 ;
+}
+.btn-primary {
+	background-color: #00abc9;
+	padding: 16px 48px;
+	font-size: 1.6rem;
+}
+.btn-primary:hover {
+	background-color: #33DEFC;
+}
+.form-control {
+	background-color: #434b4e;
+	color: #cdcdcd;
+	border: 0;
+	padding: 12px 18px;
+	height: 48px;
+}
 
+.form-group label {
+	font-weight:300;
+}
+
+.conect-cont p {
+	font-size: 1.8rem;
 }
 
 .client{
