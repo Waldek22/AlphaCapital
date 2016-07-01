@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
-* {
 
+* {
 	box-sizing: border-box;
 }
 
@@ -16,6 +16,8 @@ body {
 .nav-logo {
 	padding: 0 15px;
 }
+
+/*menu*/
 
 .lang {
 	/*margin: 15px 10px;*/
@@ -43,6 +45,11 @@ body {
 .navi-link {
 	font-family: 'Open Sans', sans-serif;
 }
+
+.glyphicon-chevron-down {
+	font-size: 0.75em;
+}
+
 /*carousel*/
 .item{
 	height: 400px;
@@ -73,9 +80,7 @@ body {
 	font-size: 12px;
 }
 
-.glyphicon-chevron-down {
-	font-size: 0.75em;
-}
+
 
 .box {
 	margin-top: 100px;
@@ -96,9 +101,31 @@ h2 {
 	font-size: 1.8em;
 }
 
+/*services*/
+.services {
+	background-color: #F8F8F8;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.services p {
+	color: #6B6B6B;
+}
+
+.services h2 {
+	color: #323232;
+}
+
 .service-icon {
 	font-size: 3em;
 }
+
+/*clients*/
+
+.clients h1 {
+	color: #323232;
+}
+/*clients-end*/
 
 .forms {
 	margin: 100px 0 ;
