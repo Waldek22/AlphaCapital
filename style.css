@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
 
 * {
+
 	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
@@ -16,7 +21,17 @@
 	/*margin: 15px 10px;*/
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 15px;
-	
+	margin-right: 25px;
+}
+
+
+.navbar {
+	padding-bottom: 15px;
+}
+
+.container-narrow {
+	width: 90%;
+	margin: 0 auto;
 }
 
 .navi {
@@ -29,6 +44,10 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+.glyphicon-chevron-down {
+	font-size: 0.75em;
+}
+
 .box {
 	margin-top: 100px;
 	margin-bottom: 50px;
@@ -39,9 +58,17 @@
 	font-size: 3em;
 }
 
+.services p {
+	/*padding: 0 10px;*/
+}
+
 h2 {
 	margin: 40px 0;
 	font-size: 1.8em;
+}
+
+.service-icon {
+	font-size: 3em;
 }
 
 .forms {

@@ -2,32 +2,35 @@
 <html lang="pl">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>!!!Tytuł strony do uzupełnienia!!!</title>
 </head>
 <body>
 	<header>
-		<div class="container">
+		
 			<nav class="navbar navbar-default navbar-fixed-top navi">
 				<div class="navbar-header">
 					<a class="navbar-brand nav-logo" href="#"><img class="logo" src="img/logo.png"></a>
 				</div>
 				
 				<ul class="nav navbar-nav navbar-left navi-link">
-		     		<li><a href="#">Usługi</a></li>
-	    	 		<li><a href="#">Doświadczenie</a></li>
-	      			<li><a href="#">Aktualności</a></li>
+		     		<li><a href="#">Usługi <span class="glyphicon glyphicon-chevron-down"></span></a></li>
+	    	 		<li><a href="#">Doświadczenie <span class="glyphicon glyphicon-chevron-down"></span></a></li>
+	      			<li><a href="#">Aktualności <span class="glyphicon glyphicon-chevron-down"></span></a></li>
 	      			<li><a href="#">O nas</a></li>
 	      			<li><a href="#">Kontakt</a></li>
 	 	   		</ul>
 
-	    		<div class="lang text-right"><a href="#">PL</a> | <a href="#">EN</a></div>	
+	    		<div class="lang text-right"><a href="#">PL</a> | <a href="#">EN</a></div>
+	    	
 			</nav>
-		</div>
+		
 	</header>
 	
 	<div class="container-fluid box">
@@ -74,23 +77,24 @@
 	</div>
 	<!--grafiki i text-->	
 	<div class="container box">
-		<div class="container text-center col-lg-3">
-			<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+		<div class="container text-center col-lg-3 services">
+			<!--<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>-->
+			<i class="fa fa-search service-icon" aria-hidden="true"></i>
 			<h2>Wyceny</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis metus sed tellus molestie lobortis. Praesent nec eros urna. In hac</p>
 		</div>
-		<div class="container text-center col-lg-3">
-			<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+		<div class="container text-center col-lg-3 services">
+			<i class="fa fa-money service-icon" aria-hidden="true"></i>
 			<h2>Finansowanie</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis metus sed tellus molestie lobortis. Praesent nec eros urna. In hac</p>
 		</div>
-		<div class="container text-center col-lg-3">
-			<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+		<div class="container text-center col-lg-3 services">
+			<i class="fa fa-exchange service-icon" aria-hidden="true"></i>
 			<h2>Sprzedaż firmy</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis metus sed tellus molestie lobortis. Praesent nec eros urna. In hac</p>
 		</div>
-		<div class="container text-center col-lg-3">
-			<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+		<div class="container text-center col-lg-3 services">
+			<i class="fa fa-info-circle service-icon" aria-hidden="true"></i>
 			<h2>Doradztwo biznesowe</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis metus sed tellus molestie lobortis. Praesent nec eros urna. In hac</p>
 		</div>
@@ -185,27 +189,30 @@
 		</div>
 	 </div>
 	 <!--klienci-->
-	 <div class="container text-center box">
-	 	<h1>Nasi klienci</h1>
-		<div class="client">
-			<div class="container text-center col-lg-2">
-				<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+	 <div class="container box">
+	 	<div class="row">
+	 		<div class="col-lg-12 text-center">
+	 		<h1>Nasi klienci</h1>
+	 		</div>
+	 	</div>
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-1 client-logo">
+				<!--<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>-->
+				<img class="img-responsive" src="img/experts.png">
 			</div>
-			<div class="container text-center col-lg-2">
-				<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+			<div class="col-lg-2 client-logo">
+				<img class="img-responsive" src="img/envato.png">
 			</div>
-			<div class="container text-center col-lg-2">
-				<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+			<div class="col-lg-2 client-logo">
+				<img class="img-responsive" src="img/exchange.png">
 			</div>
-			<div class="container text-center col-lg-2">
-				<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+			<div class="col-lg-2 client-logo">
+				<img class="img-responsive" src="img/azanon.png">
 			</div>
-			<div class="container text-center col-lg-2">
-				<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
+			<div class="col-lg-2 client-logo">
+				<img class="img-responsive" src="img/company.png">
 			</div>
-			<div class="container text-center col-lg-2">
-				<span class="glyphicon glyphicon-usd icon" aria-hidden="true"></span>
-			</div>
+
 		</div>	
 	</div>
 	<!--Kontakt-->
