@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
-
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
 * {
 
 	box-sizing: border-box;
@@ -42,6 +42,35 @@ body {
 
 .navi-link {
 	font-family: 'Open Sans', sans-serif;
+}
+/*carousel*/
+.item{
+	height: 400px;
+}
+.carousel-caption {
+	width: 700px;
+	top: 20px;
+	bottom: 0px;
+
+}
+.carousel-caption a{
+	text-decoration: none;
+}
+.carousel-caption h1{
+	color: #555;
+	position: relative;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 25px;
+	}
+.carousel-caption h1 span{
+	font-weight: bold;
+	font-size: 30px;
+}
+.carousel-caption h1 small{
+	padding-left: 90%;
+	color: #555;
+	font-size: 12px;
 }
 
 .glyphicon-chevron-down {
@@ -95,10 +124,21 @@ h3{
 	margin: 30px 0;
 }
 
+hr{
+
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	border-top: 1px solid #5B9BD5;
+	margin-bottom: 10px;
+}
+
 footer {
+	font-family: 'Ubuntu';
+	font-size: 12px;
 	height: 50px;
 	background-color: #333;
-	color: #fff;
+	color: #A6A6A7;
 }
 
 footer li a {
@@ -110,5 +150,6 @@ footer li a {
 }
 
 .foot-cont {
+	display: inline;
 	padding-top: 15px;
 }
