@@ -136,7 +136,7 @@ nav ul ul li a:hover{
 
 .box {
 	margin-top: 81px;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 	padding: 0px;
 }
 
@@ -152,8 +152,9 @@ h2 {
 /*services*/
 .services {
 	background-color: #F8F8F8;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+
 }
 
 .services .col-lg-10 {
