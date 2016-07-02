@@ -26,7 +26,6 @@ body {
 	
 	margin-top: 15px;
 	margin-right: 25px;
-	font-size: 1.25em;
 }
 
 
@@ -46,11 +45,19 @@ body {
 }
 
 .navi-link {
-	font-size: 1.25em;
+	text-transform: uppercase;
 }
 
 .glyphicon-chevron-down {
 	font-size: 0.75em;
+}
+
+.chevron {
+	display: inline-block;
+	transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	font-weight: bold;
 }
 
 /*carousel*/
@@ -93,10 +100,6 @@ body {
 
 .icon {
 	font-size: 3em;
-}
-
-.services p {
-	/*padding: 0 10px;*/
 }
 
 h2 {
