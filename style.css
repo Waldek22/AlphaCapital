@@ -102,18 +102,21 @@ nav ul ul li a:hover{
 /*carousel*/
 .item{
 	height: 400px;
+	
 }
 .carousel-caption {
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 200px;
 	width: 700px;
-	top: 20px;
-	bottom: 0px;
-
+	margin: 0 auto;
+	top: 25%;
 }
 .carousel-caption a{
 	text-decoration: none;
 }
 .carousel-caption h1{
-	color: #555;
+	color: #fff;
+	padding: 10px;
 	position: relative;
 	text-align: left;
 	text-transform: uppercase;
@@ -125,14 +128,14 @@ nav ul ul li a:hover{
 }
 .carousel-caption h1 small{
 	padding-left: 90%;
-	color: #555;
+	color: #fff;
 	font-size: 12px;
 }
 
 
 
 .box {
-	margin-top: 100px;
+	margin-top: 81px;
 	margin-bottom: 50px;
 	padding: 0px;
 }
