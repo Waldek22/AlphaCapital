@@ -28,6 +28,9 @@ body {
 	margin-right: 25px;
 }
 
+.lang a {
+	text-decoration: none;
+}
 
 .navbar {
 	padding-bottom: 15px;
@@ -150,7 +153,7 @@ h2 {
 }
 
 /*services*/
-.services {
+.container-gray {
 	background-color: #F8F8F8;
 	padding-top: 90px;
 	padding-bottom: 90px;
@@ -199,9 +202,14 @@ h2 {
 	font-weight: 700;
 }
 
-.client {
-	margin: 30px 0;
+.clients {
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
+
+/*.client {
+	margin: 30px 0;
+}*/
 
 /*clients-end*/
 
@@ -255,6 +263,8 @@ h2 {
 	margin-bottom: 10px;
 }*/
 
+
+/*footer*/
 footer {
 	font-family: 'Ubuntu';
 	font-size: 12px;
@@ -263,15 +273,50 @@ footer {
 	color: #A6A6A7;
 }
 
+.footer {
+	background-color: #333;
+	padding-bottom: 25px;
+}
+
 footer li a {
 	color: #fff;
-} 
+}
 
 .foot-form {
 	padding-top: 1px;
+	width: 400px;
+	display: inline-block;
 }
 
 .foot-cont {
 	display: inline;
 	padding-top: 15px;
+}
+
+.address h4 {
+	font-weight: 700;
+}
+
+.address {
+	background-color: #5B5B5B;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	color: white;
+}
+
+address {
+	font-weight: lighter;
+}
+
+.address a {
+	color: #11ABCF;
+	text-decoration: none;
+}
+
+.address a:hover {
+	color: #1BC5EC;
+}
+
+.news h1, .clients h1, .address h4 {
+	padding-bottom: 40px;
 }
