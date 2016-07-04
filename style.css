@@ -289,16 +289,22 @@ footer li a {
 }
 
 .foot-form {
-	padding-top: 1px;
-	width: 400px;
+	padding-top: 5px;
+	width: 390px;
 	display: inline-block;
+}
+.foot-form input{
+	display: inline-block;
+	width: 200px;
 }
 
 .foot-cont {
 	display: inline;
 	padding-top: 15px;
 }
-
+footer .navbar-nav>li>a {
+    padding-top: 0px;
+}
 .address h4 {
 	font-size: 16px;
 	font-weight: 700;
