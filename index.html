@@ -6,7 +6,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
-	
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Alpha Capital</title>
@@ -14,12 +14,12 @@
 </head>
 <body>
 	<header>
-		
+
 			<nav class="navbar navbar-default navbar-fixed-top navi">
 				<div class="navbar-header">
 					<a class="navbar-brand nav-logo" href="#"><img class="logo" src="img/logo.png"></a>
 				</div>
-				
+
 				<ul class="nav navbar-nav navbar-left navi-link">
 		     		<li><a href="#">Usługi <!--span class="glyphicon glyphicon-chevron-down"></span>--><!--<div class="chevron">></div>--></a>
 		     			<ul>
@@ -51,11 +51,11 @@
 	 	   		</ul>
 
 	    		<div class="lang text-right"><a href="#">PL</a> | <a href="#">EN</a></div>
-	    	
+
 			</nav>
-		
+
 	</header>
-	
+
 	<div class="container-fluid box">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5500">
 		  <!-- Indicators -->
@@ -67,21 +67,18 @@
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner" role="listbox">
 		    <div class="item active">
-		      <img src=img/building.jpg alt="...">
 		      <div class="carousel-caption">
 		      <a href="#">
 		        <h1><span>Wsparcie w rozwoju biznesu</span><br>Dla wielu z naszych klientów realizowaliśmy kilkukrotny wzrost wartości<br><small>Więcej...</small></h1></a>
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img src="img/industry.jpg" alt="...">
 		      <div class="carousel-caption">
 		        <a href="#">
 		        <h1><span>Pozyskanie kapitału</span><br>Skutecznie pozyskaliśmy kapitał dla kilkudziesięciu firm<br><small>Więcej...</small></h1></a>
 		      </div>
 		    </div>
 		    <div class="item">
-		      <img src=img/sea.jpg alt="...">
 		      <div class="carousel-caption">
 		        <a href="#">
 		        <h1><span>Wyceny</span><br>Zrealizowaliśmy ponad 300 niezależnych projektów<br><small>Więcej...</small></h1></a>
@@ -100,8 +97,8 @@
 		  </a>
 		</div>
 	</div>
-	
-	<!--grafiki i text-->	
+
+	<!--grafiki i text-->
 	<section class="container-gray services">
 		<div class="container">
 			<div class="row">
@@ -146,7 +143,7 @@
 					</div>
 				</div>
 			</div>
-		
+
 			<div class="row box">
 				<div class="col-lg-4 text-left">
 					<div class="row">
@@ -158,7 +155,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis metus sed tellus molestie lobortis. Praesent nec eros urna. In hac</p>
 						</div>
 					</div>
-				</div>			
+				</div>
 
 				<div class="col-lg-4 text-left">
 					<div class="row">
@@ -186,24 +183,25 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!--Formularz-->
 	<div class="container-fluid forms">
 		<div class="container">
 		  <div class="col-lg-5 text-right connect">
-			<div class="conect-cont">	
+			<div class="conect-cont">
 				<h3>Skontaktuj się z nami</h3>
 				<p>Otrzymasz fachową poradę lub umówimy się na spotkanie</p>
-			</div>	
-		  </div>			
+			</div>
+		  </div>
 		  <div class="formname">
 		   <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
 		    <form method="post">
 		     <div class="form-group">
-		      <label class="control-label " for="select">
+<!-- 		      <label class="control-label " for="select">
 		       Temat (wybierz)
-		      </label>
+		      </label> -->
 		      <select class="select form-control" id="select" name="select">
+		      <option value="" selected data-default>Wybierz temat</option>
 		       <option value="Wyceny">
 		        Wyceny
 		       </option>
@@ -219,36 +217,18 @@
 		      </select>
 		     </div>
 		     <div class="form-group ">
-		      <label class="control-label " for="name">
-		       Nazwisko/firma
-		      </label>
-		      <input class="form-control" id="name" name="name" type="text"/>
+		      <input class="form-control" id="name" name="name" placeholder="Nazwisko/firma" type="text"/>
 		     </div>
 		     <div class="form-group ">
-		      <label class="requiredField" for="email">
-		       Adres Email
-		       <span class="asteriskField">
-		        *
-		       </span>
-		      </label>
-		      <input class="form-control" id="email" name="email" type="text"/>
+		      <input class="form-control" id="email" name="email" placeholder="Adres Email" type="text"/>
 		     </div>
 		     <div class="form-group ">
-		      <label class="control-label " for="number">
-		       Telefon
-		      </label>
-		      <input class="form-control" id="number" name="number" type="text"/>
+		      <input class="form-control" id="number" name="number" placeholder="Telefon" type="text"/>
 		     </div>
 		 </div>
 		 <div class="col-lg-4 col-md-7 col-sm-6 col-xs-12">
 		     <div class="form-group ">
-		      <label class="control-label requiredField" for="message">
-		       Wiadomość
-		       <span class="asteriskField">
-		        *
-		       </span>
-		      </label>
-		      <textarea class="form-control" cols="40" id="message" name="message" rows="11"></textarea>
+		      <textarea class="form-control" cols="40" id="message" name="message" rows="11" placeholder="Wiadomość"></textarea>
 		     </div>
 		     <div class="form-group">
 		      <div>
@@ -278,7 +258,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis metus sed tellus molestie lobortis. Praesent nec eros urna. In hac</p>
 			<p><a href="#">Czytaj wpis <i class="fa fa-caret-right"></i></a></p>
 		</div>
-		
+
 		<div class="col-lg-4 text-left">
 			<img class="img-responsive" src="https://static.pexels.com/photos/6224/hands-people-woman-working-medium.jpg">
 			<h2>Lorem ipsum</h2>
@@ -296,7 +276,7 @@
 		</div>
 	</div>
 	</section>
-	 
+
 	 <!--klienci-->
 	 <section class="container clients">
 	 	<div class="row">
@@ -322,11 +302,11 @@
 				<img class="img-responsive" src="img/company.png">
 			</div>
 
-		</div>	
+		</div>
 	</section>
 
 	<!--Kontakt-->
-	
+
 
 	<section class="address">
 		<div class="container text-left">
@@ -338,7 +318,7 @@
 			<address>	Centrala Wrocław<br/>
 				Al. Kasztanowa 3a<br/>
 				53-125 Wrocław<br/>
-				<a href="tel:+48717230203">+48 71 723 02 03</a><br/>				
+				<a href="tel:+48717230203">+48 71 723 02 03</a><br/>
 				<a href="mailto:biuro@alpha-capital.pl">biuro@alpha-capital.pl</a></address>
 		</div>
 		<div class="container col-lg-2">
@@ -346,32 +326,32 @@
 				Zebra Tower<br/>
 				ul. Mokotowska 1<br/>
 				00-640 Warszawa<br/>
-				<a href="tel:+48 22 100 14 24">+48 22 100 14 24</a><br/>				
+				<a href="tel:+48 22 100 14 24">+48 22 100 14 24</a><br/>
 				<a href="mailto:warszawa@alpha-capital.pl">warszawa@alpha-capital.pl</a></address>
 		</div>
 		<div class="container col-lg-2">
 			<address>	Biuro Poznań<br/>
 				Malta Office Park<br/>
 				ul. Abpa. Baraniaka 88 E<br/>
-				61-131 Poznań<br/>				
+				61-131 Poznań<br/>
 				<a href="mailto:poznan@alpha-capital.pl">poznan@alpha-capital.pl</a></address>
 		</div>
 		<div class="container col-lg-2">
 			<address>	Biuro Kraków<br/>
 				Meduza M65<br/>
 				ul. Mogilska 65<br/>
-				31-545 Kraków<br/>			
+				31-545 Kraków<br/>
 				<a href="mailto:krakow@alpha-capital.pl">krakow@alpha-capital.pl</a></address>
 		</div>
 		<div class="container col-lg-2">
 			<address>	Trójmiasto<br/>
 				Al. Kasztanowa 3a<br/>
 				53-125 Wrocław<br/>
-				<a href="tel:+48717230203">+48 71 723 02 03</a><br/>				
+				<a href="tel:+48717230203">+48 71 723 02 03</a><br/>
 				<a href="mailto:biuro@alpha-capital.pl">biuro@alpha-capital.pl</a></address>
 		</div>
 	</section>
-	
+
 	<footer class="footer">
 		<div class="container-fluid row">
 			<div class="col-lg-8  foot-cont">Copyright &copy; 2016 Alpha Capital Group Sp. z o.o Sp.k
@@ -388,7 +368,7 @@
 		    		<label for="exampleInputEmail2">Nasz newsletter </label>
 		    		<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Twój@email.com">
 		  			<button type="submit" class="btn btn-default">Zapisz się</button>
-		  		</form>		
+		  		</form>
 			</div>
 		</div>
 	</footer>
