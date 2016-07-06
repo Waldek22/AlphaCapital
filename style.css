@@ -16,25 +16,33 @@ body {
 }
 .navbar-header,
 .navbar-header a.navbar-brand {
-	height: 100px;
+	height: 85px;
 }
 .nav-logo {
-	padding: 25px 15px;
+	padding: 20px 15px;
 }
-
+ul.nav {
+	float: right;
+}
 /*menu*/
 .lang {
-	margin-top: 40px;
-	margin-right: 25px;
+	width: 200px;
 }
 
-.lang a {
+nav.navbar ul li.lang a {
+	display: inline-block;
 	color: #11abcf;
 	text-decoration: none;
 }
+nav.navbar ul li.lang a:first-of-type {
+	padding: 25px 0 25px 40px;
+}
+nav.navbar ul li.lang a:last-of-type {
+	padding: 25px 40px 25px 0;
+}
 
 .navbar {
-	height: 100px;
+	height: 85px;
 	margin: 0;
 }
 
@@ -68,11 +76,12 @@ nav ul {
 	position: relative;
 }
 nav > ul > li {
-	height: 100px;
-	padding: 15px 0;
+	height: 85px;
+	padding: 8px 0;
 }
 nav.navbar ul li a {
 	padding: 25px 15px;
+	font-size: 15px;
 }
 nav ul ul {
 	display: none;
@@ -89,13 +98,18 @@ ul li a:hover {
 nav ul ul {
 	background-color: #f4f4f4;
 	position: absolute;
-	margin-top: 15px;
+	margin-top: 7px;
+	margin-left: 14px;
 	padding: 0;
+	white-space: nowrap;
 }
 
 nav ul ul li {
-	padding: 10px 15px;
+	padding: 15px 15px;
 	list-style-type: none;
+}
+nav.navbar ul li ul li a {
+	padding: 0;
 }
 
 nav ul ul li:hover {
@@ -111,10 +125,9 @@ nav ul ul li a:hover {
 }
 
 /*carousel*/
-.carousel-inner {
-	margin-top: 100px;
+.box {
+	margin-top: 85px;
 }
-
 .carousel,.carousel-inner,.carousel-inner > .item {
 	height: 70vh;
 }
