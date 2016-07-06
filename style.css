@@ -26,7 +26,7 @@ ul.nav {
 }
 /*menu*/
 .lang {
-	width: 200px;
+
 }
 
 nav.navbar ul li.lang a {
@@ -216,8 +216,9 @@ h2 {
 }
 
 .service-icon {
-	font-size: 1.25em;
+	font-size: 60px;
 	margin-top: 5px;
+	margin-bottom: 20px;
 }
 
 /*news*/
