@@ -10,34 +10,9 @@ body {
   padding: 0; }
 
 /*header*/
-.logo {
-  height: 50px; }
-
-.navbar-header a.navbar-brand {
-  height: 85px; }
-
-.nav-logo {
-  padding: 20px 15px; }
-
-nav.navbar ul li.lang a {
-  display: inline-block;
-  color: #11abcf;
-  text-decoration: none; }
-  nav.navbar ul li.lang a:first-of-type {
-    padding: 25px 0 25px 40px; }
-  nav.navbar ul li.lang a:last-of-type {
-    padding: 25px 40px 25px 0; }
-
-.navbar {
-  height: 85px;
-  margin: 0; }
-
 .navi {
   border: none;
   background-color: #fff; }
-
-.navi-link {
-  text-transform: uppercase; }
 
 .chevron {
   display: inline-block;
@@ -46,35 +21,48 @@ nav.navbar ul li.lang a {
   -webkit-transform: rotate(90deg);
   font-weight: 700; }
 
-nav ul li a:hover {
-  text-decoration: none; }
-
-nav ul li ul {
-  display: none;
-  background-color: #f4f4f4;
-  position: absolute;
-  margin-top: 7px;
-  margin-left: 14px;
-  padding: 0;
-  white-space: nowrap; }
-  nav ul li ul li {
-    padding: 15px 15px;
-    list-style-type: none; }
-    nav ul li ul li:hover {
-      background-color: #fdfdfd; }
-    nav ul li ul li a {
-      padding: 0;
-      color: #777; }
-      nav ul li ul li a:hover {
-        color: #6b6b6b; }
-
-ul.nav {
-  float: right; }
-
-nav > ul > li {
+nav {
+  text-transform: uppercase;
   height: 85px;
-  padding: 8px 0;
-  position: relative; }
+  margin: 0; }
+  nav a.navbar-brand {
+    padding: 20px 15px; }
+    nav a.navbar-brand img {
+      height: 50px; }
+  nav ul.nav {
+    float: right; }
+  nav ul li.lang a {
+    display: inline-block;
+    color: #11abcf;
+    text-decoration: none; }
+    nav ul li.lang a:first-of-type {
+      padding: 25px 0 25px 40px; }
+    nav ul li.lang a:last-of-type {
+      padding: 25px 40px 25px 0; }
+  nav ul li {
+    height: 85px;
+    padding: 8px 0;
+    position: relative; }
+    nav ul li a:hover {
+      text-decoration: none; }
+    nav ul li ul {
+      display: none;
+      background-color: #f4f4f4;
+      position: absolute;
+      margin-top: 7px;
+      margin-left: 14px;
+      padding: 0;
+      white-space: nowrap; }
+      nav ul li ul li {
+        padding: 15px 15px;
+        list-style-type: none; }
+        nav ul li ul li:hover {
+          background-color: #fdfdfd; }
+        nav ul li ul li a {
+          padding: 0;
+          color: #777; }
+          nav ul li ul li a:hover {
+            color: #6b6b6b; }
 
 nav.navbar ul li a {
   padding: 25px 15px;
@@ -88,13 +76,13 @@ nav ul li:hover > ul {
   margin-top: 85px;
   padding: 0; }
 
-.carousel-inner .item {
+.item {
   height: 70vh; }
-  .carousel-inner .item:first-of-type {
+  .item:first-of-type {
     background: url(img/building.jpg) 0/cover no-repeat; }
-  .carousel-inner .item:nth-of-type(2) {
+  .item:nth-of-type(2) {
     background: url(img/industry.jpg) 0/cover no-repeat; }
-  .carousel-inner .item:nth-of-type(3) {
+  .item:nth-of-type(3) {
     background: url(img/sea.jpg) 0/cover no-repeat; }
 
 .carousel-caption {
@@ -124,9 +112,6 @@ nav ul li:hover > ul {
       font-size: 12px; }
 
 /*services*/
-.icon {
-  font-size: 3em; }
-
 h2 {
   margin: 0;
   font-size: 1.8em; }
@@ -172,28 +157,22 @@ h2 {
 
 .formname {
   padding-top: 43px; }
-
-textarea.form-control {
-  height: 119px;
-  min-height: 119px; }
-
-.btn-primary {
-  background-color: #00abc9;
-  padding: 16px 48px;
-  font-size: 1.6rem;
-  display: block; }
-  .btn-primary:hover {
-    background-color: #33defc; }
-
-.form-control {
-  background-color: #434b4e;
-  color: #cdcdcd;
-  border: 0;
-  padding: 16px 18px;
-  height: 52px; }
-
-.form-group label {
-  font-weight: 300; }
+  .formname textarea {
+    height: 119px;
+    min-height: 119px; }
+  .formname .form-control {
+    background-color: #434b4e;
+    color: #cdcdcd;
+    border: 0;
+    padding: 16px 18px;
+    height: 52px; }
+  .formname .btn-primary {
+    background-color: #00abc9;
+    padding: 16px 48px;
+    font-size: 1.6rem;
+    display: block; }
+    .formname .btn-primary:hover {
+      background-color: #33defc; }
 
 /*news*/
 .news p {
@@ -220,9 +199,13 @@ footer {
   background-color: #333;
   color: #a6a6a7;
   padding-bottom: 25px; }
+  footer li a {
+    text-transform: uppercase;
+    color: #fff; }
 
-footer li a {
-  color: #fff; }
+.foot-cont {
+  line-height: 50px;
+  height: 50px; }
 
 .foot-form {
   padding-top: 9px;
@@ -237,18 +220,6 @@ footer li a {
     margin-right: 5px; }
   .foot-form button {
     margin: 0 0 3px 5px; }
-
-.foot-cont {
-  line-height: 50px; }
-
-.foot-cont,
-.foot-cont ul,
-.foot-cont ul li,
-.foot-cont a {
-  height: 50px; }
-
-.foot-cont a {
-  line-height: 50px; }
 
 .address {
   background-color: #384246;

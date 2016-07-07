@@ -16,34 +16,13 @@ body
 	padding: 0
 
 /*header*/
-.logo
-	height: 50px
-.navbar-header
-	a.navbar-brand
-		height: 85px
-.nav-logo
-	padding: 20px 15px
-
-nav.navbar ul li.lang a
-	display: inline-block
-	color: #11abcf
-	text-decoration: none
-	&:first-of-type 
-		padding: 25px 0 25px 40px
-	&:last-of-type 
-		padding: 25px 40px 25px 0
-
-.navbar
-	height: 85px
-	margin: 0
 
 .navi
 	border: none
 	background-color: #fff
 
 
-.navi-link 
-	text-transform: uppercase
+
 
 .chevron
 	display: inline-block
@@ -53,9 +32,30 @@ nav.navbar ul li.lang a
 	font-weight: 700
 
 nav
+	text-transform: uppercase
+	height: 85px
+	margin: 0
+	a.navbar-brand
+		padding: 20px 15px
+		img
+				height: 50px
+	ul.nav 
+		float: right
 	ul
-		
+		li.lang
+			a
+				display: inline-block
+				color: #11abcf
+				text-decoration: none
+				&:first-of-type 
+					padding: 25px 0 25px 40px
+				&:last-of-type 
+					padding: 25px 40px 25px 0
 		li 
+			height: 85px
+			padding: 8px 0
+			nav ul 
+			position: relative
 			a 
 				&:hover 
 					text-decoration: none
@@ -78,14 +78,6 @@ nav
 						&:hover
 							color: #6b6b6b
 
-ul.nav 
-	float: right
-
-nav > ul > li 
-	height: 85px
-	padding: 8px 0
-	nav ul 
-	position: relative
 
 nav.navbar ul li a 
 	padding: 25px 15px
@@ -99,15 +91,15 @@ nav ul li:hover > ul
 	margin-top: 85px
 	padding: 0
 
-.carousel-inner
-	.item 
-		height: 70vh
-		&:first-of-type 
-			background: $carousel-img-1 0/cover no-repeat
-		&:nth-of-type(2) 
-			background: $carousel-img-2 0/cover no-repeat
-		&:nth-of-type(3) 
-			background: $carousel-img-3 0/cover no-repeat
+
+.item 
+	height: 70vh
+	&:first-of-type 
+		background: $carousel-img-1 0/cover no-repeat
+	&:nth-of-type(2) 
+		background: $carousel-img-2 0/cover no-repeat
+	&:nth-of-type(3) 
+		background: $carousel-img-3 0/cover no-repeat
 
 .carousel-caption 
 	background-color: rgba(0,0,0,0.2)
@@ -138,9 +130,6 @@ nav ul li:hover > ul
 /*services*/
 
 
-
-.icon 
-	font-size: 3em
 h2 
 	margin: 0
 	font-size: 1.8em
@@ -188,29 +177,22 @@ h2
 
 .formname 
 	padding-top: 43px
-
-textarea.form-control 
-	height: 119px
-	min-height: 119px
-
-
-.btn-primary 
-	background-color: #00abc9
-	padding: 16px 48px
-	font-size: 1.6rem
-	display: block
-	&:hover 
-		background-color: #33defc
-
-.form-control 
-	background-color: #434b4e
-	color: #cdcdcd
-	border: 0
-	padding: 16px 18px
-	height: 52px
-
-.form-group label 
-	font-weight: 300
+	textarea
+		height: 119px
+		min-height: 119px
+	.form-control 
+		background-color: #434b4e
+		color: #cdcdcd
+		border: 0
+		padding: 16px 18px
+		height: 52px
+	.btn-primary 
+		background-color: #00abc9
+		padding: 16px 48px
+		font-size: 1.6rem
+		display: block
+		&:hover 
+			background-color: #33defc
 
 /*news*/
 
@@ -240,10 +222,12 @@ footer
 	background-color: #333
 	color: #a6a6a7
 	padding-bottom: 25px
-
-
-footer li a 
-	color: #fff
+	li a 
+		text-transform: uppercase
+		color: #fff
+.foot-cont 
+	line-height: 50px
+	height: 50px
 
 .foot-form 
 	padding-top: 9px
@@ -258,17 +242,6 @@ footer li a
 		margin-right: 5px
 	button 
 		margin: 0 0 3px 5px
-
-.foot-cont 
-	line-height: 50px
-.foot-cont,
-.foot-cont ul,
-.foot-cont ul li,
-.foot-cont a 
-	height: 50px
-
-.foot-cont a 
-	line-height: 50px
 
 .address 
 	background-color: #384246
@@ -291,8 +264,10 @@ footer li a
 .news a:hover,
 .lang a:hover 
 	color: #1bc5ec
+
 .address h4 
 	padding-bottom: 30px
+
 .clients,
 .news,
 .services 
