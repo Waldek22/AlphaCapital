@@ -21,9 +21,6 @@ body
 	border: none
 	background-color: #fff
 
-
-
-
 .chevron
 	display: inline-block
 	transform: rotate(90deg)
@@ -39,18 +36,9 @@ nav
 		padding: 20px 15px
 		img
 				height: 50px
-	ul.nav 
-		float: right
 	ul
-		li.lang
-			a
-				display: inline-block
-				color: #11abcf
-				text-decoration: none
-				&:first-of-type 
-					padding: 25px 0 25px 40px
-				&:last-of-type 
-					padding: 25px 40px 25px 0
+		&.nav 
+			float: right
 		li 
 			height: 85px
 			padding: 8px 0
@@ -77,12 +65,19 @@ nav
 						color: #777
 						&:hover
 							color: #6b6b6b
+			
+	&.navbar ul li a 
+		padding: 25px 15px
+		font-size: 15px
 
-
-nav.navbar ul li a 
-	padding: 25px 15px
-	font-size: 15px
-
+nav.navbar ul li.lang a
+	display: inline-block
+	color: #11abcf
+	text-decoration: none
+	&:first-of-type 
+		padding: 25px 0 25px 40px
+	&:last-of-type 
+		padding: 25px 40px 25px 0
 nav ul li:hover > ul 
 	display: block
 

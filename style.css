@@ -31,14 +31,6 @@ nav {
       height: 50px; }
   nav ul.nav {
     float: right; }
-  nav ul li.lang a {
-    display: inline-block;
-    color: #11abcf;
-    text-decoration: none; }
-    nav ul li.lang a:first-of-type {
-      padding: 25px 0 25px 40px; }
-    nav ul li.lang a:last-of-type {
-      padding: 25px 40px 25px 0; }
   nav ul li {
     height: 85px;
     padding: 8px 0;
@@ -63,10 +55,18 @@ nav {
           color: #777; }
           nav ul li ul li a:hover {
             color: #6b6b6b; }
+  nav.navbar ul li a {
+    padding: 25px 15px;
+    font-size: 15px; }
 
-nav.navbar ul li a {
-  padding: 25px 15px;
-  font-size: 15px; }
+nav.navbar ul li.lang a {
+  display: inline-block;
+  color: #11abcf;
+  text-decoration: none; }
+  nav.navbar ul li.lang a:first-of-type {
+    padding: 25px 0 25px 40px; }
+  nav.navbar ul li.lang a:last-of-type {
+    padding: 25px 40px 25px 0; }
 
 nav ul li:hover > ul {
   display: block; }
