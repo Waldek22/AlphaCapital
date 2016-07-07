@@ -31,33 +31,30 @@ nav {
       height: 50px; }
   nav ul.nav {
     float: right; }
-  nav ul li {
-    height: 85px;
-    padding: 8px 0;
-    position: relative; }
-    nav ul li a:hover {
-      text-decoration: none; }
-    nav ul li ul {
-      display: none;
-      background-color: #f4f4f4;
-      position: absolute;
-      margin-top: 7px;
-      margin-left: 14px;
-      padding: 0;
-      white-space: nowrap; }
-      nav ul li ul li {
-        padding: 15px 15px;
-        list-style-type: none; }
-        nav ul li ul li:hover {
-          background-color: #fdfdfd; }
-        nav ul li ul li a {
-          padding: 0;
-          color: #777; }
-          nav ul li ul li a:hover {
-            color: #6b6b6b; }
-  nav.navbar ul li a {
-    padding: 25px 15px;
-    font-size: 15px; }
+  nav ul li a:hover {
+    text-decoration: none; }
+  nav ul li ul {
+    display: none;
+    background-color: #f4f4f4;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 14px;
+    padding: 0;
+    white-space: nowrap; }
+    nav ul li ul li {
+      padding: 15px 15px;
+      list-style-type: none; }
+      nav ul li ul li:hover {
+        background-color: #fdfdfd; }
+      nav ul li ul li a {
+        padding: 0;
+        color: #777; }
+        nav ul li ul li a:hover {
+          color: #6b6b6b; }
+
+nav.navbar ul li a {
+  padding: 25px 15px;
+  font-size: 15px; }
 
 nav.navbar ul li.lang a {
   display: inline-block;
@@ -70,6 +67,11 @@ nav.navbar ul li.lang a {
 
 nav ul li:hover > ul {
   display: block; }
+
+nav > ul > li {
+  height: 85px;
+  padding: 8px 0;
+  position: relative; }
 
 /*carousel*/
 .box {

@@ -40,10 +40,6 @@ nav
 		&.nav 
 			float: right
 		li 
-			height: 85px
-			padding: 8px 0
-			nav ul 
-			position: relative
 			a 
 				&:hover 
 					text-decoration: none
@@ -66,9 +62,9 @@ nav
 						&:hover
 							color: #6b6b6b
 			
-	&.navbar ul li a 
-		padding: 25px 15px
-		font-size: 15px
+nav.navbar ul li a 
+	padding: 25px 15px
+	font-size: 15px
 
 nav.navbar ul li.lang a
 	display: inline-block
@@ -81,6 +77,11 @@ nav.navbar ul li.lang a
 nav ul li:hover > ul 
 	display: block
 
+nav > ul > li 
+	height: 85px
+	padding: 8px 0
+	nav ul 
+	position: relative
 /*carousel*/
 .box 
 	margin-top: 85px
