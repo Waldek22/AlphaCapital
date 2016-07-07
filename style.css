@@ -217,7 +217,9 @@ footer {
     display: inline-block;
     width: 200px;
     height: 34px;
-    margin: 0 5px; }
+    margin: 0 5px;
+    background-color: #434B4E;
+    border: 0; }
   .foot-form label {
     margin-right: 5px; }
   .foot-form button {
