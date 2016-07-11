@@ -1,5 +1,5 @@
-@import  "https://fonts.googleapis.com/css?family=Ubuntu:500";
-@import  "https://fonts.googleapis.com/css?family=Lato:400,700,900&subset=latin,latin-ext";
+@import  "https://fonts.googleapis.com/css?family=Ubuntu:500"
+@import  "https://fonts.googleapis.com/css?family=Lato:400,700,900&subset=latin,latin-ext"
 
 $main-font: 'Lato',sans-serif
 $carousel-img-1:  url(img/building.jpg)
@@ -10,16 +10,13 @@ $carousel-img-3:  url(img/sea.jpg)
 	box-sizing: border-box
 
 body
-	font-family: $main-font 
+	font-family: $main-font
 	font-size: 16px
 	overflow-x: hidden
 	padding: 0
+	background: #f8f8f8
 
 /*header*/
-
-.navi
-	border: none
-	background-color: #fff
 
 .chevron
 	display: inline-block
@@ -28,76 +25,81 @@ body
 	-webkit-transform: rotate(90deg)
 	font-weight: 700
 
-nav
+nav.navbar
+	border: none
+	background-color: #fff
 	text-transform: uppercase
-	height: 85px
+	height: 90px
 	margin: 0
 	a.navbar-brand
+		height: auto
+		margin-left: 0 !important
 		padding: 20px 15px
 		img
-				height: 50px
-	ul
-		&.nav 
-			float: right
-		li 
-			a 
-				&:hover 
-					text-decoration: none
-			ul
-				display: none
-				background-color: #f4f4f4
-				position: absolute
-				margin-top: 7px
-				margin-left: 14px
-				padding: 0
-				white-space: nowrap
-				li 
-					padding: 15px 15px
-					list-style-type: none
-					&:hover
-						background-color: #fdfdfd
+			height: 50px
+	.container-fluid
+		padding: 0
+	.container-fluid .collapse.navbar-collapse,
+	.container-fluid .collapsing
+		& > ul
+			&.nav
+				float: right
+			& > li
+				height: 90px
+				&.open >  a
+					background: white !important
+				&.lang
 					a
-						padding: 0
-						color: #777
+						display: inline-block
+						color: #11abcf
+						text-decoration: none
+						&:first-of-type
+							padding: 25px 0 25px 40px
+						&:last-of-type
+							padding: 25px 40px 25px 0
+				// &:hover > ul
+				// 	display: block
+				a
+					padding: 35px 15px
+					font-size: 15px
+					&:hover
+						text-decoration: none
+				ul
+					background-color: #f4f4f4
+					padding: 0
+					border: none
+					border-radius: 0
+					white-space: nowrap
+					li
+						padding: 15px 15px
+						list-style-type: none
 						&:hover
-							color: #6b6b6b
-			
-nav.navbar ul li a 
-	padding: 25px 15px
-	font-size: 15px
+							background-color: #fdfdfd
+						a
+							padding: 0
+							color: #777
+							&:hover
+								background: inherit
+	.container-fluid .collapsing,
+	.container-fluid .collapse.in
+		ul
+			float: none
 
-nav.navbar ul li.lang a
-	display: inline-block
-	color: #11abcf
-	text-decoration: none
-	&:first-of-type 
-		padding: 25px 0 25px 40px
-	&:last-of-type 
-		padding: 25px 40px 25px 0
-nav ul li:hover > ul 
-	display: block
-
-nav > ul > li 
-	height: 85px
-	padding: 8px 0
-	nav ul 
-	position: relative
 /*carousel*/
-.box 
-	margin-top: 85px
+.box
+	margin-top: 90px
 	padding: 0
 
-
-.item 
+.item
 	height: 70vh
-	&:first-of-type 
+	&:first-of-type
 		background: $carousel-img-1 0/cover no-repeat
-	&:nth-of-type(2) 
+	&:nth-of-type(2)
 		background: $carousel-img-2 0/cover no-repeat
-	&:nth-of-type(3) 
+	&:nth-of-type(3)
 		background: $carousel-img-3 0/cover no-repeat
 
-.carousel-caption 
+.carousel-caption
 	background-color: rgba(0,0,0,0.2)
 	height: 200px
 	width: 700px
@@ -105,20 +107,20 @@ nav > ul > li
 	top: 37%
 	left: 10px
 	color: white
-	a 
+	a
 		text-decoration: none
 		color: white
-	h1 
+	h1
 		color: #fff
 		padding-left: 30px
 		position: relative
 		text-align: left
 		text-transform: uppercase
 		font-size: 25px
-		span 
+		span
 			font-weight: 700
 			font-size: 30px
-		small 
+		small
 			padding-left: 90%
 			color: #fff
 			font-size: 12px
@@ -126,163 +128,225 @@ nav > ul > li
 /*services*/
 
 
-h2 
+h2
 	margin: 0
 	font-size: 1.8em
 
 .services
-	padding: 0 20px
-	p 
+	padding-bottom: 90px
+	p
 		color: #6b6b6b
 		margin-top: 15px
 		line-height: 25px
-	h1 
+	h1
 		margin-left: 15px
-	h2 
+	h2
 		color: #323232
 		font-weight: 700
 		font-size: 23px
 
 
-.service-icon 
+.service-icon
 	font-size: 60px
 	margin-top: 5px
 	margin-bottom: 20px
 
-.container-gray 
-	background-color: #f8f8f8
+.container-gray
 	padding-top: 90px
-	padding-bottom: 90px
 
 /*form*/
 
-.forms 
+.forms
 	background-color: #2e3639
 	overflow: hidden
 	padding: 30px 0
 	color: #ccc
 
-.conect-cont 
+.conect-cont
 	padding: 20px
-	h3 
+	h3
 		font-size: 3.4rem
 		color: #fff
 		font-weight: 700
-	p 
+	p
 		font-size: 1.8rem
 
-.formname 
+.formname
 	padding-top: 43px
 	textarea
 		height: 119px
 		min-height: 119px
-	.form-control 
+	.form-control
 		background-color: #434b4e
 		color: #cdcdcd
 		border: 0
 		padding: 16px 18px
 		height: 52px
-	.btn-primary 
+	.btn-primary
 		background-color: #00abc9
 		padding: 16px 48px
 		font-size: 1.6rem
 		display: block
-		&:hover 
+		&:hover
 			background-color: #33defc
 
 /*news*/
 
 .news
-	p 
+	p
 		color: #6b6b6b
 		margin-top: 10px
-	a 
+	a
 		color: #11abcf
 		text-decoration: none
-	h2 
+	h2
 		margin-top: 20px
 
 /*clients*/
 
-.clients	
+.clients
 	padding-top: 90px
 	padding-bottom: 90px
 
 
 /*footer*/
 
-footer 
+footer
 	font-family: 'Ubuntu'
 	font-size: 12px
 	height: 50px
 	background-color: #333
 	color: #a6a6a7
 	padding-bottom: 25px
-	li a 
+	li a
 		text-transform: uppercase
 		color: #fff
-.foot-cont 
+.foot-cont
 	line-height: 50px
 	height: 50px
 
-.foot-form 
+.foot-form
 	padding-top: 9px
 	width: 420px
 	display: inline-block
-	input 
+	input
 		display: inline-block
 		width: 200px
 		height: 34px
 		margin: 0 5px
 		background-color: #434B4E
 		border: 0
-	label 
+	label
 		margin-right: 5px
-	button 
+	button
 		margin: 0 0 3px 5px
 
-.address 
+.address
 	background-color: #384246
 	padding-top: 45px
 	padding-bottom: 45px
 	font-size: 14px
 	color: #fff
-	h4 
+	h4
 		font-size: 16px
 		font-weight: 700
 		text-align: center
-	address 
+	address
 		font-weight: lighter
-	a 
+	a
 		color: #A9C7D2
 		text-decoration: none
 
 
 .address a:hover,
 .news a:hover,
-.lang a:hover 
+.lang a:hover
 	color: #1bc5ec
 
-.address h4 
+.address h4
 	padding-bottom: 30px
 
 .clients,
 .news,
-.services 
-	h1 
+.services
+	h1
 		color: #323232
 		font-weight: 700
 		padding-bottom: 30px
-@media (max-width: @screen-xs-max)
-	margin: 0 auto
-	float:none
-	display: inline
-footer 
-	height: 200px
-	background-color: #333
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
-footer 
-	height: 200px
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max)
 
-@media (min-width: @screen-lg-min)
+@media (min-width: 768px) and (max-width: 991px)
+	.navbar-collapse.collapse
+		display: none !important
+	.navbar-collapse.collapse.in
+		display: block !important
+	.navbar-header .collapse, .navbar-toggle
+		display: block !important
+	.navbar-header
+		float: none
+@media (max-width: 991px)
+	nav.navbar
+		.container-fluid
+			.navbar-header
+				button
+					margin-top: 25px
+					margin-right: 25px
+			.collapse.navbar-collapse,
+			.collapsing,
+			.collapse.navbar-collapse
+				height: auto
+				ul.nav
+					float: none
+					width: 100%
+					background: white
+					li
+						position: relative
+						display: block
+						height: auto
+						width: 100%
+						&.lang
+							a:first-of-type
+								padding: 10px 15px
+							a:last-of-type
+								padding: 10px 15px
+						a
+							padding: 10px
+							font-size: 15px
+						ul
+							position: static
+							box-shadow: none
+							li
+								padding: 0
+								a
+									padding: 15px 10px
+@media (max-width: 768px)
+	nav.navbar
+		.container-fluid
+			.collapse.navbar-collapse,
+			.collapsing,
+			.collapse.navbar-collapse
+				height: auto
+				max-height: none
+				width: 100%
+				margin: 0
+				padding: 0
+				border: none
+				ul.nav
+					float: none
+					width: 100%
+					margin: 0
+					background: white
+					li:not(.lang)
+						position: relative
+						display: block
+						height: auto
+						width: 100%
+						a
+							padding: 10px
+							font-size: 15px
+						ul
+							position: static
+							box-shadow: none
+							li
+								padding: 0
+								a
+									padding: 15px 10px
