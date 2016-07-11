@@ -24,6 +24,8 @@ nav.navbar {
   text-transform: uppercase;
   height: 90px;
   margin: 0; }
+  nav.navbar .navbar-header {
+    padding: 0 10px; }
   nav.navbar a.navbar-brand {
     height: auto;
     margin-left: 0 !important;
@@ -43,6 +45,7 @@ nav.navbar {
       background: white !important; }
     nav.navbar .container-fluid .collapse.navbar-collapse > ul > li.lang a,
     nav.navbar .container-fluid .collapsing > ul > li.lang a {
+      margin-top: 10px;
       display: inline-block;
       color: #11abcf;
       text-decoration: none; }
@@ -114,15 +117,20 @@ nav.navbar {
     padding-left: 30px;
     position: relative;
     text-align: left;
-    text-transform: uppercase;
-    font-size: 25px; }
-    .carousel-caption h1 span {
-      font-weight: 700;
-      font-size: 30px; }
-    .carousel-caption h1 small {
-      padding-left: 90%;
-      color: #fff;
-      font-size: 12px; }
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase; }
+  .carousel-caption h2 {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 30px; }
+  .carousel-caption small {
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px; }
 
 /*services */
 h2 {
@@ -158,7 +166,7 @@ h2 {
   color: #ccc; }
 
 .conect-cont {
-  padding: 20px; }
+  padding: 20px 0; }
   .conect-cont h3 {
     font-size: 3.4rem;
     color: #fff;
@@ -204,33 +212,47 @@ h2 {
 footer {
   font-family: "Ubuntu";
   font-size: 12px;
-  height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5px;
   background-color: #333;
-  color: #a6a6a7;
-  padding-bottom: 25px; }
+  color: #a6a6a7; }
+  footer > * {
+    float: none !important;
+    display: inline-block; }
   footer li a {
     text-transform: uppercase;
     color: #fff; }
-
-.foot-cont {
-  line-height: 50px;
-  height: 50px; }
-
-.foot-form {
-  padding-top: 9px;
-  width: 420px;
-  display: inline-block; }
-  .foot-form input {
-    display: inline-block;
-    width: 200px;
-    height: 34px;
-    margin: 0 5px;
-    background-color: #434B4E;
-    border: 0; }
-  .foot-form label {
-    margin-right: 5px; }
-  .foot-form button {
-    margin: 0 0 3px 5px; }
+  footer .foot-cont {
+    order: 0;
+    line-height: 50px;
+    height: 50px; }
+  footer ul.nav {
+    order: 1;
+    display: flex;
+    justify-content: center; }
+    footer ul.nav li {
+      float: none;
+      display: inline-block; }
+  footer .foot-form {
+    order: 2;
+    display: flex;
+    justify-content: space-around;
+    align-content: center; }
+    footer .foot-form input {
+      display: inline-block;
+      width: 200px;
+      height: 34px;
+      margin: 0 5px;
+      background-color: #434B4E;
+      border: 0; }
+    footer .foot-form label {
+      line-height: 34px;
+      margin-right: 5px; }
+    footer .foot-form button {
+      margin: 0 0 3px 5px; }
 
 .address {
   background-color: #384246;
@@ -253,8 +275,25 @@ footer {
 .lang a:hover {
   color: #1bc5ec; }
 
+.clients .flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .clients .flex-row .client-logo {
+    display: inline-block;
+    flex-basis: 20%; }
+    .clients .flex-row .client-logo img {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: auto; }
+
 .address h4 {
   padding-bottom: 30px; }
+
+.clients img {
+  height: 80px; }
 
 .clients h1,
 .news h1,
@@ -263,6 +302,24 @@ footer {
   font-weight: 700;
   padding-bottom: 30px; }
 
+@media (max-width: 1200px) {
+  .carousel .carousel-control {
+    display: none; }
+  .carousel .carousel-inner .item .carousel-caption {
+    top: 0;
+    position: relative;
+    height: auto;
+    width: 100%;
+    left: 0;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4); }
+    .carousel .carousel-inner .item .carousel-caption h1,
+    .carousel .carousel-inner .item .carousel-caption h2 {
+      padding: 0; }
+
+  footer ul.nav {
+    order: 0;
+    flex-basis: 100%; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-collapse.collapse {
     display: none !important; }
@@ -275,7 +332,7 @@ footer {
 
   .navbar-header {
     float: none; } }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   nav.navbar .container-fluid .navbar-header button {
     margin-top: 25px;
     margin-right: 25px; }
@@ -292,10 +349,15 @@ footer {
       nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li,
       nav.navbar .container-fluid .collapsing ul.nav li,
       nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li {
+        padding-left: 20px;
         position: relative;
         display: block;
         height: auto;
         width: 100%; }
+        nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li.lang a,
+        nav.navbar .container-fluid .collapsing ul.nav li.lang a,
+        nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li.lang a {
+          margin-top: 0; }
         nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li.lang a:first-of-type,
         nav.navbar .container-fluid .collapsing ul.nav li.lang a:first-of-type,
         nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li.lang a:first-of-type {
@@ -321,7 +383,16 @@ footer {
             nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li ul li a,
             nav.navbar .container-fluid .collapsing ul.nav li ul li a,
             nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li ul li a {
-              padding: 15px 10px; } }
+              padding: 15px 10px; }
+
+  .carousel-caption {
+    padding: 30px; }
+
+  .news {
+    padding-left: 30px;
+    padding-right: 30px; }
+    .news img {
+      margin: 0 auto; } }
 @media (max-width: 768px) {
   nav.navbar .container-fluid .collapse.navbar-collapse,
   nav.navbar .container-fluid .collapsing,
@@ -363,6 +434,43 @@ footer {
             nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li:not(.lang) ul li a,
             nav.navbar .container-fluid .collapsing ul.nav li:not(.lang) ul li a,
             nav.navbar .container-fluid .collapse.navbar-collapse ul.nav li:not(.lang) ul li a {
-              padding: 15px 10px; } }
+              padding: 15px 10px; }
+
+  .clients .flex-row .client-logo {
+    flex-basis: 33%; }
+
+  footer {
+    padding: 0;
+    margin: 0; }
+    footer ul.nav {
+      padding: 0;
+      margin: 0; }
+    footer .foot-form {
+      flex-basis: 100%;
+      text-align: center;
+      justify-content: center; }
+    footer .foot-cont {
+      order: 3;
+      text-align: center;
+      flex-basis: 100%; } }
+@media (max-width: 544px) {
+  .clients .flex-row .client-logo {
+    flex-basis: 50%; }
+
+  footer ul.nav {
+    flex-flow: column; }
+    footer ul.nav li {
+      display: block;
+      width: 100%;
+      text-align: center; }
+  footer .foot-form {
+    flex-flow: column wrap;
+    align-items: space-around; }
+    footer .foot-form input {
+      margin: 5px auto; }
+    footer .foot-form button {
+      margin: 10px auto;
+      display: block;
+      width: 120px; } }
 
 /*# sourceMappingURL=style.css.map */

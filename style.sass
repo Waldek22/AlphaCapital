@@ -31,6 +31,8 @@ nav.navbar
 	text-transform: uppercase
 	height: 90px
 	margin: 0
+	.navbar-header
+		padding: 0 10px
 	a.navbar-brand
 		height: auto
 		margin-left: 0 !important
@@ -50,6 +52,7 @@ nav.navbar
 					background: white !important
 				&.lang
 					a
+						margin-top: 10px
 						display: inline-block
 						color: #11abcf
 						text-decoration: none
@@ -115,15 +118,20 @@ nav.navbar
 		padding-left: 30px
 		position: relative
 		text-align: left
+		font-weight: 700
+		font-size: 30px
 		text-transform: uppercase
+	h2
 		font-size: 25px
-		span
-			font-weight: 700
-			font-size: 30px
-		small
-			padding-left: 90%
-			color: #fff
-			font-size: 12px
+		text-align: left
+		margin-bottom: 30px
+		padding-left: 30px
+	small
+		color: #fff
+		font-size: 15px
+		position: absolute
+		bottom: 20px
+		right: 30px
 
 /*services*/
 
@@ -163,7 +171,7 @@ h2
 	color: #ccc
 
 .conect-cont
-	padding: 20px
+	padding: 20px 0
 	h3
 		font-size: 3.4rem
 		color: #fff
@@ -214,32 +222,47 @@ h2
 footer
 	font-family: 'Ubuntu'
 	font-size: 12px
-	height: 50px
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+	align-items: center
+	padding: 0 5px
 	background-color: #333
 	color: #a6a6a7
-	padding-bottom: 25px
+	> *
+		float: none !important
+		display: inline-block
 	li a
 		text-transform: uppercase
 		color: #fff
-.foot-cont
-	line-height: 50px
-	height: 50px
-
-.foot-form
-	padding-top: 9px
-	width: 420px
-	display: inline-block
-	input
-		display: inline-block
-		width: 200px
-		height: 34px
-		margin: 0 5px
-		background-color: #434B4E
-		border: 0
-	label
-		margin-right: 5px
-	button
-		margin: 0 0 3px 5px
+	.foot-cont
+		order: 0
+		line-height: 50px
+		height: 50px
+	ul.nav
+		order: 1
+		display: flex
+		justify-content: center
+		li
+			float: none
+			display: inline-block
+	.foot-form
+		order: 2
+		display: flex
+		justify-content: space-around
+		align-content: center
+		input
+			display: inline-block
+			width: 200px
+			height: 34px
+			margin: 0 5px
+			background-color: #434B4E
+			border: 0
+		label
+			line-height: 34px
+			margin-right: 5px
+		button
+			margin: 0 0 3px 5px
 
 .address
 	background-color: #384246
@@ -263,9 +286,23 @@ footer
 .lang a:hover
 	color: #1bc5ec
 
+.clients .flex-row
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-around
+	align-items: center
+	.client-logo
+		display: inline-block
+		flex-basis: 20%
+		img
+			display: block
+			margin: 0 auto
+			width: 80%
+			height: auto
 .address h4
 	padding-bottom: 30px
-
+.clients img
+	height: 80px
 .clients,
 .news,
 .services
@@ -273,7 +310,27 @@ footer
 		color: #323232
 		font-weight: 700
 		padding-bottom: 30px
-
+@media (max-width: 1200px)
+	.carousel
+		.carousel-control
+			display: none
+		.carousel-inner
+			.item
+				.carousel-caption
+					top: 0
+					position: relative
+					height: auto
+					width: 100%
+					left: 0
+					padding: 30px
+					background: rgba(0, 0, 0, 0.4)
+					h1,
+					h2
+						padding: 0
+	footer
+		ul.nav
+			order: 0
+			flex-basis: 100%
 @media (min-width: 768px) and (max-width: 991px)
 	.navbar-collapse.collapse
 		display: none !important
@@ -283,7 +340,7 @@ footer
 		display: block !important
 	.navbar-header
 		float: none
-@media (max-width: 991px)
+@media (max-width: 992px)
 	nav.navbar
 		.container-fluid
 			.navbar-header
@@ -299,11 +356,14 @@ footer
 					width: 100%
 					background: white
 					li
+						padding-left: 20px
 						position: relative
 						display: block
 						height: auto
 						width: 100%
 						&.lang
+							a
+								margin-top: 0
 							a:first-of-type
 								padding: 10px 15px
 							a:last-of-type
@@ -318,6 +378,13 @@ footer
 								padding: 0
 								a
 									padding: 15px 10px
+	.carousel-caption
+		padding: 30px
+	.news
+		padding-left: 30px
+		padding-right: 30px
+		img
+			margin: 0 auto
 @media (max-width: 768px)
 	nav.navbar
 		.container-fluid
@@ -350,3 +417,38 @@ footer
 								padding: 0
 								a
 									padding: 15px 10px
+	.clients .flex-row .client-logo
+		flex-basis: 33%
+	footer
+		padding: 0
+		margin: 0
+		ul.nav
+			padding: 0
+			margin: 0
+		.foot-form
+			flex-basis: 100%
+			text-align: center
+			justify-content: center
+		.foot-cont
+			order: 3
+			text-align: center
+			flex-basis: 100%
+@media (max-width: 544px)
+	.clients .flex-row .client-logo
+		flex-basis: 50%
+	footer
+		ul.nav
+			flex-flow: column
+			li
+				display: block
+				width: 100%
+				text-align: center
+		.foot-form
+			flex-flow: column wrap
+			align-items: space-around
+			input
+				margin: 5px auto
+			button
+				margin: 10px auto
+				display: block
+				width: 120px
