@@ -1,3 +1,6 @@
 img/Thumbs.db
 gruntfile.js
 node_modules
+.sass-cache
+backup.html
+*.map
