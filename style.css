@@ -157,7 +157,15 @@ h2 {
 
 .container-gray {
   padding-top: 90px; }
-
+  /*offers head*/
+  .offer img {
+    width: 100%;
+  }
+  .left-nav a {
+    color: #6b6b6b;
+    margin-top: 15px;
+    line-height: 25px;
+  }
 /*form */
 .forms {
   background-color: #2e3639;
@@ -208,9 +216,41 @@ h2 {
   padding-top: 90px;
   padding-bottom: 90px; }
 
+  .special ul li {
+    list-style-type: none;
+  }
+
+  .special a {
+  text-decoration: none; 
+
+  }
+
+  .content-offer a{
+    color: #549cd9;
+    font-size: 1.8rem;
+  }
+
+  .content-offer p{
+    text-transform: uppercase;
+    padding: 30px 0 ;
+  }
+
+  .content-offer i {
+    padding-right: 16px;
+  }
+
   /*faq*/
 .faq {
   padding: 90px 0;
+}
+
+.faq h2 {
+  font-weight: bold;
+  padding: 20px 10px;
+  color: #549cd9;
+}
+.faq h4 {
+  font-weight: bold;
 }
 /*footer */
 footer {
