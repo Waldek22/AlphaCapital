@@ -20,6 +20,7 @@ body {
 
 nav.navbar {
   border: none;
+  box-shadow: 0 0 4px #000;
   background-color: #fff;
   text-transform: uppercase;
   height: 90px;
@@ -143,8 +144,6 @@ h2 {
     color: #6b6b6b;
     margin-top: 15px;
     line-height: 25px; }
-  .services h1 {
-    margin-left: 15px; }
   .services h2 {
     color: #323232;
     font-weight: 700;
@@ -161,6 +160,11 @@ h2 {
   .offer img {
     width: 100%;
   }
+
+  .left-nav {
+    margin-top: 50px;
+  }
+
   .left-nav a {
     color: #6b6b6b;
     margin-top: 15px;
@@ -210,6 +214,9 @@ h2 {
   text-decoration: none; }
 .news h2 {
   margin-top: 20px; }
+ .news {
+  background: #fff;
+ } 
 
 /*clients */
 .clients {
@@ -230,9 +237,11 @@ h2 {
     font-size: 1.8rem;
   }
 
-  .content-offer p{
+  .content-offer h2{
     text-transform: uppercase;
-    padding: 30px 0 ;
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 2rem;
   }
 
   .content-offer i {
@@ -241,12 +250,12 @@ h2 {
 
   /*faq*/
 .faq {
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .faq h2 {
   font-weight: bold;
-  padding: 20px 10px;
+  padding: 0 10px 30px 10px;
   color: #549cd9;
 }
 .faq h4 {
