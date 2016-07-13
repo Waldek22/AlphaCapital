@@ -139,7 +139,7 @@ h2 {
   font-size: 1.8em; }
 
 .services {
-  padding-bottom: 90px; }
+  padding-bottom: 45px; }
   .services p {
     color: #6b6b6b;
     margin-top: 15px;
@@ -157,18 +157,29 @@ h2 {
 .container-gray {
   padding-top: 90px; }
   /*offers head*/
+  .offer {
+    padding-bottom: 40px;
+  }
+
+  .offer h1{
+    padding-bottom: 15px;
+    color: #323232;
+    font-weight: 700;.
+  }
   .offer img {
     width: 100%;
   }
 
   .left-nav {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .left-nav a {
     color: #6b6b6b;
-    margin-top: 15px;
     line-height: 25px;
+  }
+  .bg-white {
+    background: #fff;
   }
 /*form */
 .forms {
@@ -248,9 +259,16 @@ h2 {
     padding-right: 16px;
   }
 
+  .advantage h3 {
+    font-weight: bold;
+  }
+
+  .advantage i {
+    padding: 10px;
+  }
   /*faq*/
 .faq {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .faq h2 {
@@ -260,8 +278,21 @@ h2 {
 }
 .faq h4 {
   font-weight: bold;
+  color: #333;
 }
 
+.panel-faq {
+  border: none;
+}
+
+.heading-faq {
+  background-color: #fff;
+  color: #333;
+}
+
+.heading-faq i {
+  padding-right: 10px;
+}
 .recommend img{
   max-width: 150px;
 }
