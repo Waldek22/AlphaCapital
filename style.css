@@ -261,6 +261,18 @@ h2 {
 .faq h4 {
   font-weight: bold;
 }
+
+.recommend img{
+  max-width: 150px;
+}
+
+.recommend a {
+  text-transform: uppercase;
+  color: #549cd9;
+  font-size: 2rem;
+  padding-top: 35px;
+  float: right;
+}
 /*footer */
 footer {
   font-family: "Ubuntu";
